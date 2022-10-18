@@ -19,7 +19,7 @@ async function botaoCarregar(){
 
         const rate = exibir.conversion_rates.BRL
         const cal = (rate * input)
-        valorConvertido.innerText = `R$ ${cal.toFixed(2)}`
+        valorConvertido.innerText = `USD$ ${cal.toFixed(2)}`
         //console.log(cal)
 
 
