@@ -15,20 +15,25 @@ async function botaoCarregar(){
         //console.log(exibir)
         const inputOne = document.querySelector('#valor')
         const valor = inputOne.value
-        const input = parseFloat(valor
-            )
+        const input = parseFloat(valor)
+
         const rate = exibir.conversion_rates.BRL
         const cal = (rate * input)
         valorConvertido.innerText = `R$ ${cal.toFixed(2)}`
-        console.log(cal)
-    
+        //console.log(cal)
+
+
+      
     })
       .catch('')
 
 }
 
 
-
+document.addEventListener("keypress", function(e){
+  if(e.key ==="Enter"){
+    buttom.click()
+  }})
 
 
 
